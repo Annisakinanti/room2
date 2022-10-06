@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textSize="25sp"
+            android:textColor="#3F51B5" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textColor="#E91E63" />
+
+        <ImageView
+            android:id="@+id/editNote"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_noun_edit"
+            android:layout_toLeftOf="@id/deleteNote"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/deleteNote"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_noun_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
